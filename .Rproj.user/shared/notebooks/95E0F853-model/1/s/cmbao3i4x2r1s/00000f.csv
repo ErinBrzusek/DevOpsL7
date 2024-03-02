@@ -1,0 +1,7 @@
+"0","# Load the Data in Python"
+"0",""
+"0","#con = connect('my-db.duckdb')"
+"0","#df = penguins.load_penguins()"
+"0","#con.execute('CREATE TABLE penguins AS SELECT * FROM df')"
+"0","#con.close()"
+"0",""

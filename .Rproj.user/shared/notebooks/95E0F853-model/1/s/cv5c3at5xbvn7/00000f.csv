@@ -1,0 +1,6 @@
+"0","# Then you can auto-generate a {fastAPI} from this model with"
+"0","app = VetiverAPI(v, check_prototype=True)"
+"0",""
+"0","# Run the FastAPI server"
+"0","#app.run(port=8080)"
+"0",""
