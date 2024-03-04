@@ -67,11 +67,16 @@ vetiver_pin_write(b, v, versioned=True)
 
 v = VetiverModel.from_pin(b, 'penguin_model')
 ```
-
 ```{python}
 # Then you can auto-generate a {fastAPI} from this model with
 app = VetiverAPI(v, check_prototype=True)
 
+# Prepare Docker File
+#from vetiver import prepare_docker
+#prepare_docker(b, "penguin_model")
+```
+
+```{python}
 # Run the FastAPI server
 #app.run(port=8080)
 ```

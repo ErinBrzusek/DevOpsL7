@@ -2,5 +2,82 @@
 "0","app = VetiverAPI(v, check_prototype=True)"
 "0",""
 "0","# Run the FastAPI server"
-"0","#app.run(port=8080)"
-"0",""
+"0","app.run(port=8080)"
+"2","C:\Users\C25ERI~1.BRZ\Lib\site-packages\vetiver\utils.py:18: UserWarning: You may be running from a notebook environment. Jupyter Notebooks are not considered stable environments for production code
+  warnings.warn(
+"
+"2","INFO:     Started server process [17860]
+"
+"2","INFO:     Waiting for application startup.
+INFO:     VetiverAPI starting...
+INFO:     Application startup complete.
+"
+"2","INFO:     Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+"
+"2","INFO:     Shutting down
+"
+"2","INFO:     Waiting for application shutdown.
+"
+"2","INFO:     Application shutdown complete.
+INFO:     Finished server process [17860]
+"
+"0","quit"
+"0","shiny::runApp()"
+"2","Registered S3 methods overwritten by 'htmltools':
+  method               from         
+  print.html           tools:rstudio
+  print.shiny.tag      tools:rstudio
+  print.shiny.tag.list tools:rstudio
+"
+"2","Loading required package: shiny
+"
+"2","
+Listening on http://127.0.0.1:6269
+"
+"1","INFO  [2024-03-04 07:46:59] App Started
+"
+"1","INFO  [2024-03-04 07:47:00] Prediction Requested
+"
+"2","Warning:"
+"2"," Error in httr2::req_perform: Failed to perform HTTP request.
+[1mCaused by error in `curl::curl_fetch_memory()`:[22m
+[33m![39m Failed to connect to 127.0.0.1 port 8080 after 2037 ms: Couldn't connect to server
+"
+"2","  148: [37m<Anonymous>[39m
+"
+"2",""
+"2","  147: [37msignalCondition[39m
+"
+"2",""
+"2","  146: [37msignal_abort[39m
+"
+"2",""
+"2","  145: [37mcnd_signal[39m
+"
+"2",""
+"2","  144: [37mhandle_resp[39m
+"
+"2",""
+"2","  143: [37mhttr2::req_perform[39m
+"
+"2",""
+"2","  142: [34m[1meventReactiveValueFunc [C:\Users\C25Erin.Brzusek\OneDrive - afacademy.af.edu\Documents\DevOps/app.R#63][22m[39m
+"
+"2",""
+"2","   98: [37mpred[39m
+"
+"2",""
+"2","   97: [37mrenderText[39m
+"
+"2",""
+"2","   96: [37mfunc[39m
+"
+"2",""
+"2","   83: [37mrenderFunc[39m
+"
+"2",""
+"2","   82: [37moutput$pred[39m
+"
+"2",""
+"2","    1: [37mshiny::runApp[39m
+"
