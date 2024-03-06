@@ -7,7 +7,6 @@ format:
 
 ## Penguin Size and Mass by Sex and Species
 
-
 ```{r}
 library(palmerpenguins)
 library(dplyr)
