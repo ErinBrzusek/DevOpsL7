@@ -41,7 +41,7 @@ jobs:
        ## Install rmarkdown package
        
       - name: Install rmarkdown package
-        run: R -e "install.packages('rmarkdown')"
+        run: Rscript -e "install.packages('remotes'); remotes::install_cran('rmarkdown')"
        
         ## Install Python and the necessary Python packages from requirements.txt
       - name: Install Python and Dependencies
