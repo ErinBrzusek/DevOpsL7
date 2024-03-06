@@ -1,1 +1,14 @@
-ci
+# Ignore all CSV files
+*.csv
+
+# Ignore all CSS files
+*.css
+
+# Ignore all txt files
+*.txt
+
+# Ignore all py files
+*.py
+
+# Ignore venv directory
+DevOps/venv/Lib/site-packages/babel/locale-data
