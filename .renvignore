@@ -11,4 +11,7 @@
 *.py
 
 # Ignore venv directory
-DevOps/venv/Lib/site-packages/babel/locale-data
+C:/Users/C25Erin.Brzusek/OneDrive - afacademy.af.edu/Documents/DevOps/venv/Lib/site-packages/babel/locale-data
+
+# Ignore pycache directory
+C:/Users/C25Erin.Brzusek/OneDrive - afacademy.af.edu/Documents/DevOps/venv/Lib/site-packages/pygments/lexers/__pycache__
