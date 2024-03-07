@@ -15,6 +15,7 @@ library(DBI)
 library(duckdb)
 library(dbplyr)
 library(httr2)
+library(rmarkdown)
 
 df <- palmerpenguins::penguins
 ```
