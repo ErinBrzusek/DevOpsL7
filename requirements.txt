@@ -101,7 +101,7 @@ PyYAML==6.0.1
 pyzmq==25.1.2
 qtconsole==5.5.1
 QtPy==2.4.1
-questionary==2.0.1
+questionary
 referencing==0.33.0
 requests==2.31.0
 rfc3339-validator==0.1.4
