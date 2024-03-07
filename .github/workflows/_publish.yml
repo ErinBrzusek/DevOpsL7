@@ -16,13 +16,6 @@ jobs:
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
-
-      - name: Render and Publish
-        uses: quarto-dev/quarto-actions/publish@v2
-        with:
-          target: gh-pages
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
       ## Install R, {renv}, and the packages for content
       - name: Install R
@@ -38,12 +31,7 @@ jobs:
         env:
           RENV_CONFIG_REPOS_OVERRIDE: https://packagemanager.rstudio.com/all/latest
        
-       ## Install rmarkdown package
-       
-      - name: Install rmarkdown package
-        run: Rscript -e "install.packages('remotes'); remotes::install_cran('rmarkdown')"
-       
-        ## Install Python and the necessary Python packages from requirements.txt
+      ## Install Python and the necessary Python packages from requirements.txt
       - name: Install Python and Dependencies
         uses: actions/setup-python@v4
         with:
@@ -51,3 +39,11 @@ jobs:
           cache: 'pip'
       - run: pip install jupyter
       - run: pip install -r requirements.txt
+      
+      ## Render and Publish
+      - name: Render and Publish
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target: gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

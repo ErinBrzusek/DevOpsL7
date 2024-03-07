@@ -1,9 +1,0 @@
-"0","# Then you can auto-generate a {fastAPI} from this model with"
-"0","app = VetiverAPI(v, check_prototype=True)"
-"0",""
-"0","# Prepare Docker File"
-"0","from vetiver import prepare_docker"
-"0","prepare_docker(b, ""penguin_model"")"
-"2","C:\Users\C25ERI~1.BRZ\Lib\site-packages\vetiver\attach_pkgs.py:77: UserWarning: required packages unknown for board protocol: ('file', 'local'), add to model's metadata to export
-  warnings.warn(
-"

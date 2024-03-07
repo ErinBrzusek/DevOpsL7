@@ -42,6 +42,7 @@ df %>%
   geom_point() + 
   geom_smooth(method = "lm")
 ```
+
 ```{r}
 # Load the Data
 
