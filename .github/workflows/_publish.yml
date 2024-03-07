@@ -30,6 +30,10 @@ jobs:
           cache-version: 1
         env:
           RENV_CONFIG_REPOS_OVERRIDE: https://packagemanager.rstudio.com/all/latest
+          
+      ## Install rmarkdown package
+      - name: Install rmarkdown package
+        run: Rscript -e "install.packages('remotes'); remotes::install_cran('rmarkdown')"
        
       ## Install Python and the necessary Python packages from requirements.txt
       - name: Install Python and Dependencies
