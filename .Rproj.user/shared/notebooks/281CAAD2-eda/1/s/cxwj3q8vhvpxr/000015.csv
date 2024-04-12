@@ -1,6 +1,0 @@
-"0","# Use the Database"
-"0",""
-"0","#con <- DBI::dbConnect(duckdb::duckdb(), dbdir = ""my-db.duckdb"")"
-"0","#df <- dplyr::tbl(con, ""penguins"")"
-"0",""
-"0","#DBI::dbDisconnect(con)"

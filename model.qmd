@@ -28,9 +28,10 @@ from duckdb import connect
 
 ## Get Data
 
-
 ```{python}
-df = penguins.load_penguins().dropna()
+con = duckdb.connect('my-db.duckdb')
+df = con.execute("SELECT * FROM penguins").fetchdf().dropna()
+con.close()
 
 df.head(3)
 ```
@@ -60,22 +61,42 @@ v = VetiverModel(model, model_name='penguin_model', prototype_data=X)
 ```
 
 ```{python}
-b = board_folder('data/model', allow_pickle_read=True)
+import s3fs as s3
+from pins import board_s3
+from vetiver import vetiver_pin_write
+```
+
+## Load Environment
+
+```{python}
+from dotenv import load_dotenv
+
+load_dotenv()
+```
+
+```{python}
+board = board_s3("do4ds-lab-brzusek", allow_pickle_read=True)
+vetiver_pin_write(board, v)
+```
+
+```{python}
+#b = board_folder('data/model', allow_pickle_read=True)
 
 # Create pin
-vetiver_pin_write(b, v, versioned=True)
+#vetiver_pin_write(b, v, versioned=True)
 
-v = VetiverModel.from_pin(b, 'penguin_model')
+#v = VetiverModel.from_pin(b, 'penguin_model')
 ```
 
 ```{python}
 # Then you can auto-generate a {fastAPI} from this model with
-app = VetiverAPI(v, check_prototype=True)
+#app = VetiverAPI(v, check_prototype=True)
 
 # Prepare Docker File
 #from vetiver import prepare_docker
 #prepare_docker(b, "penguin_model")
 ```
+
 
 ```{python}
 # Run the FastAPI server

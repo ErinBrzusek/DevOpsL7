@@ -8,6 +8,8 @@ format:
 ## Penguin Size and Mass by Sex and Species
 
 ```{r}
+# install.packages("paws")
+
 library(palmerpenguins)
 library(dplyr)
 library(ggplot2)
@@ -16,10 +18,25 @@ library(duckdb)
 library(dbplyr)
 library(httr2)
 library(rmarkdown)
+library(aws.s3)
 
 df <- palmerpenguins::penguins
 ```
 
+```{r}
+# Set AWS security credentials globally.
+Sys.setenv(
+    AWS_ACCESS_KEY_ID = "AKIAXYKJWTM4BOYN4UYW",
+    AWS_SECRET_ACCESS_KEY = "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",
+    AWS_REGION = "us-east-2"
+)
+```
+
+```{r}
+# Create an S3 client, then list the objects within bucket
+s3 <- paws::s3()
+s3$list_objects(Bucket = "do4ds-lab-brzusek")
+```
 
 ```{r}
 df %>%

@@ -1,5 +1,0 @@
-"0","# Load the Data"
-"0",""
-"0","#con <- DBI::dbConnect(duckdb::duckdb(), dbdir = #""my-db.duckdb"")"
-"0","#DBI::dbWriteTable(con, ""penguins"", #palmerpenguins::penguins)"
-"0","#DBI::dbDisconnect(con)"
