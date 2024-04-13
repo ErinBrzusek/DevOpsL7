@@ -52,7 +52,7 @@ jobs:
           
       ## Give Github Actions S3 credentials
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.AKIAXYKJWTM4BOYN4UYW }}
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.2ogiq5sNX2TsUGHe2wub8ngZeUwYvNCRS58OM7mt }}
           AWS_REGION: us-east-2
