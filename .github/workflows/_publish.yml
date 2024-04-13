@@ -51,7 +51,7 @@ jobs:
           target: gh-pages
       ## Give Github Actions S3 credentials
         env:
-          GITHUB_TOKEN: ${{ secrets.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 }}
-          AWS_ACCESS_KEY_ID: ${{ secrets.AKIAXYKJWTM4BOYN4UYW }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.2ogiq5sNX2TsUGHe2wub8ngZeUwYvNCRS58OM7mt }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: us-east-2
