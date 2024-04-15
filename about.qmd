@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "Home"
 ---
 
 Welcome to Penguins EDA (Exploratory Data Analysis) and Modeling page! Here, we delve into the fascinating world of penguins, exploring the intricate relationships between their physical characteristics, such as size and mass, across different species and sexes. This project leverages the rich dataset provided by the **`palmerpenguins`** package, offering a closer look at these creatures through various statistical and machine learning techniques.
