@@ -126,12 +126,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./about.html"> 
-<span class="menu-text">About</span></a>
+<span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./eda.html"> 
@@ -186,7 +182,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<div id="bbf4897a" class="cell" data-execution_count="1">
+<div id="4c946c5c" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Chapter 1 Dependencies</span></span>
@@ -211,7 +207,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <section id="get-data" class="level2">
 <h2 class="anchored" data-anchor-id="get-data">Get Data</h2>
-<div id="fda9cefd" class="cell" data-execution_count="2">
+<div id="67229f60" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>con <span class="op">=</span> duckdb.<span class="ex">connect</span>(<span class="st">'my-db.duckdb'</span>)</span>
@@ -283,7 +279,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="define-model-and-fit" class="level2">
 <h2 class="anchored" data-anchor-id="define-model-and-fit">Define Model and Fit</h2>
-<div id="05244e96" class="cell" data-execution_count="3">
+<div id="767be360" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> get_dummies(df[[<span class="st">'bill_length_mm'</span>, <span class="st">'species'</span>, <span class="st">'sex'</span>]], drop_first <span class="op">=</span> <span class="va">True</span>)</span>
@@ -295,7 +291,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="get-some-information" class="level2">
 <h2 class="anchored" data-anchor-id="get-some-information">Get some information</h2>
-<div id="318c632d" class="cell" data-execution_count="4">
+<div id="0a7197e6" class="cell" data-execution_count="4">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"R^2 </span><span class="sc">{</span>model<span class="sc">.</span>score(X,y)<span class="sc">}</span><span class="ss">"</span>)</span>
@@ -310,13 +306,13 @@ Columns Index(['bill_length_mm', 'species_Chinstrap', 'species_Gentoo', 'sex_mal
 Coefficients [  32.53688677 -298.76553447 1094.86739145  547.36692408]</code></pre>
 </div>
 </div>
-<div id="21ea22ac" class="cell" data-execution_count="5">
+<div id="c2d7a5ad" class="cell" data-execution_count="5">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>v <span class="op">=</span> VetiverModel(model, model_name<span class="op">=</span><span class="st">'penguin_model'</span>, prototype_data<span class="op">=</span>X)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="669c69d9" class="cell" data-execution_count="6">
+<div id="28d2c740" class="cell" data-execution_count="6">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> s3fs <span class="im">as</span> s3</span>
@@ -327,7 +323,7 @@ Coefficients [  32.53688677 -298.76553447 1094.86739145  547.36692408]</code></p
 </section>
 <section id="load-environment" class="level2">
 <h2 class="anchored" data-anchor-id="load-environment">Load Environment</h2>
-<div id="a859a873" class="cell" data-execution_count="7">
+<div id="20c17c4a" class="cell" data-execution_count="7">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> dotenv <span class="im">import</span> load_dotenv</span>
@@ -338,7 +334,7 @@ Coefficients [  32.53688677 -298.76553447 1094.86739145  547.36692408]</code></p
 <pre><code>False</code></pre>
 </div>
 </div>
-<div id="6d0d0e63" class="cell" data-execution_count="8">
+<div id="d2aada52" class="cell" data-execution_count="8">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># AWS Pin</span></span>
@@ -347,7 +343,7 @@ Coefficients [  32.53688677 -298.76553447 1094.86739145  547.36692408]</code></p
 <span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="co">#vetiver_pin_write(board, v)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="aaa91ee4" class="cell" data-execution_count="9">
+<div id="c798fc4d" class="cell" data-execution_count="9">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> board_folder(<span class="st">'data/model'</span>, allow_pickle_read<span class="op">=</span><span class="va">True</span>)</span>
@@ -363,10 +359,10 @@ Coefficients [  32.53688677 -298.76553447 1094.86739145  547.36692408]</code></p
  with vetiver.model_card()
 Writing pin:
 Name: 'penguin_model'
-Version: 20240415T192731Z-565d5</code></pre>
+Version: 20240415T193350Z-565d5</code></pre>
 </div>
 </div>
-<div id="a3e45182" class="cell" data-execution_count="10">
+<div id="719806d2" class="cell" data-execution_count="10">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Then you can auto-generate a {fastAPI} from this model with</span></span>
@@ -377,14 +373,14 @@ Version: 20240415T192731Z-565d5</code></pre>
 <span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="co">#prepare_docker(b, "penguin_model")</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="7105cb1b" class="cell" data-execution_count="11">
+<div id="e0b26799" class="cell" data-execution_count="11">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Run the FastAPI server</span></span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="co">#app.run(port=8080)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="24224862" class="cell" data-execution_count="12">
+<div id="c092f40b" class="cell" data-execution_count="12">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the Data in Python</span></span>
@@ -395,7 +391,7 @@ Version: 20240415T192731Z-565d5</code></pre>
 <span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a><span class="co">#con.close()</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="39b2fab8" class="cell" data-execution_count="13">
+<div id="2b04bf0e" class="cell" data-execution_count="13">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Use the Database</span></span>
@@ -405,7 +401,7 @@ Version: 20240415T192731Z-565d5</code></pre>
 <span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a><span class="co">#con.close()</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="e88da492" class="cell" data-execution_count="14">
+<div id="ff88a782" class="cell" data-execution_count="14">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co">#req_data = {</span></span>
