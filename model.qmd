@@ -75,15 +75,17 @@ load_dotenv()
 ```
 
 ```{python}
-board = board_s3("do4ds-lab-brzusek", allow_pickle_read=True)
-vetiver_pin_write(board, v)
+# AWS Pin
+
+#board = board_s3("do4ds-lab-brzusek", allow_pickle_read=True)
+#vetiver_pin_write(board, v)
 ```
 
 ```{python}
-#b = board_folder('data/model', allow_pickle_read=True)
+b = board_folder('data/model', allow_pickle_read=True)
 
 # Create pin
-#vetiver_pin_write(b, v, versioned=True)
+vetiver_pin_write(b, v, versioned=True)
 
 #v = VetiverModel.from_pin(b, 'penguin_model')
 ```
