@@ -18,15 +18,15 @@ library(duckdb)
 library(dbplyr)
 library(httr2)
 library(rmarkdown)
-library(aws.s3)
+#library(aws.s3)
 
 df <- palmerpenguins::penguins
 ```
 
 ```{r}
 # Create an S3 client, then list the objects within bucket
-s3 <- paws::s3()
-s3$list_objects(Bucket = "do4ds-lab-brzusek")
+#s3 <- paws::s3()
+#s3$list_objects(Bucket = "do4ds-lab-brzusek")
 ```
 
 ```{r}
