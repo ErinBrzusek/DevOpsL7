@@ -5,7 +5,7 @@ format:
     code-fold: true
 ---
 
-```{python}
+```{python, messgae = FALSE}
 # Chapter 1 Dependencies
 from palmerpenguins import penguins
 from pandas import get_dummies

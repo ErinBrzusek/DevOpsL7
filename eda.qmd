@@ -7,8 +7,8 @@ format:
 
 ## Penguin Size and Mass by Sex and Species
 
-```{r}
-# install.packages("paws")
+```{r, message = FALSE}
+# Packages Dependencies
 
 library(palmerpenguins)
 library(dplyr)
@@ -18,13 +18,15 @@ library(duckdb)
 library(dbplyr)
 library(httr2)
 library(rmarkdown)
-#library(aws.s3)
+```
 
+```{r}
 df <- palmerpenguins::penguins
 ```
 
 ```{r}
 # Create an S3 client, then list the objects within bucket
+
 #s3 <- paws::s3()
 #s3$list_objects(Bucket = "do4ds-lab-brzusek")
 ```
@@ -42,7 +44,6 @@ df %>%
 ```
 
 ## Penguin Size vs Mass by Species
-
 
 ```{r}
 df %>%

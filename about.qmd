@@ -21,7 +21,3 @@ Throughout this exploration, we use a variety of tools and libraries, including:
 -   **Python Libraries**: **`pandas`**, **`numpy`**, **`sklearn`** for data manipulation and machine learning, along with **`vetiver`** and **`pins`** for model deployment and versioning.
 
 -   **Database and API Integration**: Demonstrations of integrating with a DuckDB database and utilizing APIs for model predictions.
-
-### **Purpose and Learning**
-
-The primary aim of this page is to provide an accessible, educational exploration into data science and machine learning through a real-world data set. By bridging R and Python, it serves as a guide for those interested in the interdisciplinary nature of data science.

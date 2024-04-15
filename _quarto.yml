@@ -9,6 +9,7 @@ website:
         text: Home
       - eda.qmd
       - model.qmd
+      - app.R
 
 format:
   html:
